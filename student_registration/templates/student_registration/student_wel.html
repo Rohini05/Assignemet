@@ -1,0 +1,12 @@
+{% extends 'student_registration/base.html'%}
+{% block content %}
+
+{% csrf_token %} 
+<h1>welcome student</h1>
+{% for i in data %}
+<h2> {{i.fullname}}</h2>
+ <h2>{{i.profile}}</h2>
+
+
+{%endfor%}
+{% endblock %}
